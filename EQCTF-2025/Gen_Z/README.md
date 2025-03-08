@@ -1,4 +1,4 @@
- ![](assets/question.png) 
+ ![](./assets/question.png) 
  
 ---
 ### Goals
@@ -152,7 +152,7 @@ int main()
 ```
 
 3. Observing the logfile, 
-![](assets/logfile.png) 
+![](./assets/logfile.png) 
 We should focus that flag is paired up on \[2025-01-01], so we should patch our c code to run on that time stamp, and which we just need to fix the seed() function
 Part that affect:
 ```cpp
@@ -195,6 +195,6 @@ g++ -o gen_z chall.cpp -lssl -lcrypto
 
 ### Final result
 ---
-![](assets/correctSeed.png) 
+![](./assets/correctSeed.png) 
 And flag file is generated:
-![](assets/flag.png) 
+![](./assets/flag.png) 

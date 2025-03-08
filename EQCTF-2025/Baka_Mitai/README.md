@@ -1,4 +1,4 @@
-![](assets/question.png) 
+![](./assets/question.png) 
 ---
 ### Goals
 1. Check file information using checksec
@@ -9,11 +9,11 @@ https://shinmao.github.io/posts/2022/02/bp1/
 https://github.com/jakespringer/angr_ctf
 ---
 1. Using checksec, we realised the file is dynamcally linked, stripped
-![](assets/fileinfo.png) 
+![](./assets/fileinfo.png) 
 2. Decompile with ghidra, since it's stripped, we have to find the main entry from entry function
-![](assets/entryFunction.png) 
+![](./assets/entryFunction.png) 
 3. Try to rename the variables, functions, for ease of analysis
-![](assets/renamed.png) 
+![](./assets/renamed.png) 
 From this point, we could know that:
 - The program proceed if flag length == 0x37 (55 characters), 
 - It go through complex transformation, lastly doing flagcheck and tell if the flag provide from user input is correct
@@ -21,7 +21,7 @@ From this point, we could know that:
 - Instead, we will deploy angr script, automate this process
 
 4. I deployed the angr script on google colab
-![](assets/googleColab.png) 
+![](./assets/googleColab.png) 
 ```python
 !pip install angr
 
@@ -90,6 +90,6 @@ However, there are few points worth mentioning,
 
 ### Final Result
 ---
-![](assets/finalResult.png) 
+![](./assets/finalResult.png) 
 
 

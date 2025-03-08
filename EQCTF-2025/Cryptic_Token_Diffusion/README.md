@@ -1,4 +1,4 @@
-![](assets/question.png) 
+![](./assets/question.png) 
 
 ---
 ### Goals
@@ -8,7 +8,7 @@
 _Tools required: vbindiff_
 ---
 1. Viewing the files, there are two versions of application. Thus, we try to compare the difference between versions.
-![](assets/files.png) 
+![](./assets/files.png) 
 ```bash
 vbindiff vault-v1.0.0.elf vault-1.2.1.elf
 ```
@@ -16,9 +16,9 @@ vbindiff vault-v1.0.0.elf vault-1.2.1.elf
 2. Observe the pattern, we realised that there are two parts showing difference in binaries:
 	- vault-v1.0.0 acts as the index number, corresponds to the characters in vault-v1.2.1
 _Part 1_
-![](assets/diff1.png) 
+![](./assets/diff1.png) 
 _Part 2_
-![](assets/diff2.png) 
+![](./assets/diff2.png) 
 - List out all the correspondence, sort them in ascending order, turn to ASCII and print it out
 ```python
 v1p1 = [12, 28, 0, 23, 15, 21, 10, 4, 27, 5, 26, 8, 17, 3, 18, 25]
@@ -38,4 +38,4 @@ print(sorted_ascii)
 ```
 ### Final Result
 ---
-![](assets/solution.png) 
+![](./assets/solution.png) 

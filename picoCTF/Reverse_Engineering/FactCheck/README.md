@@ -3,7 +3,7 @@
 ---
 Tags: Reverse Engineering
 
-![](img/question.png)
+![](./img/question.png)
 
 ### Description
 This binary is putting together some important piece of information... Can you uncover that information? Examine this [file](https://artifacts.picoctf.net/c_titan/188/bin). Do you understand its inner workings?
@@ -16,7 +16,7 @@ This binary is putting together some important piece of information... Can you u
 4. Analyse through the code and memory allocations, control statement, and determine the rest of the string appended.
 ---
 We obtained the first half flag somewhere in the main function  
-![](img/firstHalf.png)  
+![](./img/firstHalf.png)  
 
 ```
   pcVar2 = (char *)std::__cxx11::basic_string<>::operator[]((ulong)local_208);
@@ -47,9 +47,9 @@ We obtained the first half flag somewhere in the main function
 ```
 A portion of control statement from the decompiled file, which tells about the append of rest of the flag
 - The variables point a certain memory location
-- ![](img/address.png)
+- ![](./img/address.png)
 - We should browse through the corresponding memory location to find the value stored inside
-- ![](img/memoryLocation.png)
+- ![](./img/memoryLocation.png)
 - By analysing these, we could simplify the control statement:
 ```
 pcVar2 = 35h;

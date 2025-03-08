@@ -3,7 +3,7 @@
 ---
 Tags: Cryptography
 
-![](img/question.png)
+![](./img/question.png)
 
 ### Description
 Decrypt the password and use it to decrypt the message. ***The oracle can decrypt anything except the password.***
@@ -75,18 +75,18 @@ Notes:
 - It's actually not necessary to have the script to solve this challenge, the objective of this script is not to automate our attack but to perform and handle a large constraint numbers calculations
 
 Chosen Ciphertext Attack (CCA) terminology, question-wise:
-  ![](img/terminology.png)
+  ![](./img/terminology.png)
 
 ---
 ### Steps
 Extract the plaintext from ciphertext in password.enc with pwntools.py(the script)
-![](img/firstPhase.png)
+![](./img/firstPhase.png)
 
 After obtaining the password from first phase, RSA-CCA, proceed with AES-decryption(symmetric encryption), running this command, targeting the secret.enc file:
 ```
 openssl enc -aes-256-cbc -d -in secret.enc
 ```
-![](img/secondPhase.png)  
+![](./img/secondPhase.png)  
 
 Flag obtained:  
-![](img/flag.png)
+![](./img/flag.png)

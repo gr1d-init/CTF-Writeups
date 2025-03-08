@@ -1,2 +1,2 @@
 # Cryptography
-1. [rsa_oracle](/Cryptography/rsa_oracle/README.md)
+1. [rsa_oracle](rsa_oracle/README.md)

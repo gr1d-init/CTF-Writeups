@@ -1,2 +1,2 @@
 # Reverse Engineering
-1. [FactCheck](/Reverse_Engineering/FactCheck/README.md)
+1. [FactCheck](FactCheck/README.md)

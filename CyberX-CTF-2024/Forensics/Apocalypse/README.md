@@ -1,7 +1,7 @@
 # CyberX_UTM_CTF-2024: Apocalypse
 ---
 Tags: Forensics  
-![](img/question.png)  
+![](./img/question.png)  
 ### Description
 Notorious hacker CyberSteal6969 has struck again, this time targeting CyberX, stealing a highly confidential flag. Our team managed to seize his personal computer, but the system was wiped clean, except for a single, suspicious image left behind.
 
@@ -19,7 +19,7 @@ Reports suggest CyberSteal6969 may have been communicating with his counterpart 
 ---
 #### Steps
 1. pngchecker analyse the image  
-   ![](img/pngchecker.png)  
+   ![](./img/pngchecker.png)  
 2. Use the script to recover the full image
 ```
 import zlib
@@ -188,30 +188,30 @@ output_image_path = acropalypse.reconstruct_image('cm.png', 1920, 1080, True) //
 References: https://youtu.be/R866SnJoKQg?si=rby5gJoYa2s9zR4N
 
 3. Retrieve the recovered full image from the specified output directory: /tmp folder
-![](files/restored.png)  
+![](./files/restored.png)  
 4. Login to flickr with the credentials obtained from the recovered image  
 ```
 cybersteal6969@gmail.com
 sh8UPt-S"Cp-6i+
 ```
- ![](img/login.png)  
+ ![](./img/login.png)  
 5. Browse through cybersteal6969's profile, we found two videos, flag1 and flag2  
-![](img/cyberstealprofiile.png)  
+![](./img/cyberstealprofiile.png)  
 6. From the video, we analyse the morse code, given "NO FLAG FOR YOU TRY SOMETHING ELSE"
 Morse Code Analyser: https://morsecode.world/international/decoder/audio-decoder-adaptive.html
 7. From the videos, we know that, it was posted by info stealer6969, shared to cybersteal6969, two of them are communicating  
-   ![](img/infostealerposted.png)  
+   ![](./img/infostealerposted.png)  
 8. Enter info stealer6969 profile, we found another video, named flag, analyse the morse code, we get "GOODJOBG3TT1NGH3R3", this is the first decoy flag  
-![](img/infostealervid.png)  
+![](./img/infostealervid.png)  
 9. Keep browsing, we found that info stealer6969 uploaded bunch of pictures  
-![](img/infopic.png)  
+![](./img/infopic.png)  
 10. These pictures containing secret info in their metadata
 11. Using exiftool, we found that cat.jpg directs us to https://cyberxstupid.blogspot.com/2024/12/blog-post.html, shown at comment section  
-![](files/pictures/cat.jpg)  
-![](img/exifcat.png)  
+![](./files/pictures/cat.jpg)  
+![](./img/exifcat.png)  
 12. Randomly clicking through the site, we found the second decoy flag CyberX{c4t_m0us3_g4m3_34sy}  
-![](img/first.png)  
+![](./img/first.png)  
 13. Here we need to use Wayback Mahcine, archive.org, to track the past version of the site.  
-![](img/wayback.png)  
+![](./img/wayback.png)  
 14. Under the same link but in past version, we obtain the final flag CyberX{c4t_m0us3_pl4y_m4d3_34s13r}  
-![](img/waybackflag.png)
+![](./img/waybackflag.png)
