@@ -1,6 +1,13 @@
 # CTF-Writeups
 CTF Writeups Compilation
 
+## KalmarCTF-2025 Writeups
+**CTFTime**: [KalmarCTF-2025](https://ctftime.org/event/2599/)
+| Name | Category | Remarks |
+| ---- | -------- | ------- |
+| [babyKalmarCTF](./KalmarCTF-2025/babyKalmarCTF/) | Misc | Webform Filler |
+
+
 
 ## EQCTF-2025 Writeups
 
