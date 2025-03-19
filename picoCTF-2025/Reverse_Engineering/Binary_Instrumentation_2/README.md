@@ -45,6 +45,6 @@ frida -l <script>.js -f ./bininst2.exe
 
 ### Final Result
 ---
-Base64 Encoded Flag:
+Base64 Encoded Flag:  
 ![](./assets/solution.png)  
 **Flag:** `picoCTF{fr1da_f0r_b1n_in5trum3nt4tion!_b21aef39}`
