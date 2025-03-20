@@ -32,6 +32,7 @@ CTF Writeups Compilation
 | [Baka Mitai](./EQCTF-2025/Baka_Mitai/) | RE | Symbolic Analysis |
 | [Cryptic Token DIffusion](./EQCTF-2025/Cryptic_Token_Diffusion/) | RE | Binary Diffing |
 | [Gen Z](./EQCTF-2025/Gen_Z/) | RE | Obfuscation |
+| [GitHub](./EQCTF-2025/GitHub/) | OSINT & Brainfuck | Git SHA1 Hash Bruteforce |
 
 
 ## CyberX-CTF-2024 Writeups
