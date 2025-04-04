@@ -2,6 +2,13 @@
 CTF Writeups Compilation
 
 
+## pingCTF-2025 Writeups
+**CTFTime**: [pingCTF-2025](https://ctftime.org/event/2670/)
+| Name | Category | Remarks |
+| ---- | -------- | ------- |
+| [ones-and-zeroes](./pingCTF-2025/ones-and-zeroes/) | Misc(Hardware) | I2C Signal Decode |
+
+
 ## picoCTF-2025 Writeups
 | Name | Category | Remarks |
 | ---- | -------- | ------- |
