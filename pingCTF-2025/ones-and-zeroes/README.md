@@ -9,7 +9,7 @@
 https://cdn.sparkfun.com/assets/9/5/f/7/b/HD44780.pdf
 ---
 
-### Solution:
+### Solution
 1. Identify the pinouts and we realise that the focus is only on I2C outputs SDA and SCL, at the end passing to HD44780 LCD Pane, so we don't bother anything on breadboard.
 ![](./assets/setup1.png)   
 ![](./assets/ref.webp)  
